@@ -1,9 +1,8 @@
-running_program = 1
+running_program = True
 
 while running_program:
     output = input(">>")
 
     match output:
         case ".exit":
-            running_program = 0
-        case ""
+            running_program = False
