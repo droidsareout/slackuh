@@ -7,3 +7,7 @@ def list_commands():
         "clear": "Clear all question and answers.",
         "list": "View all questions and their answers.",
     }
+
+    print("===== COMMANDS =====")
+    for command, info in commands.items():
+        print(f"{command}: {info}")
