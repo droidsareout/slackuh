@@ -1,3 +1,6 @@
+question_answers = {}
+
+
 def list_commands():
     commands = {
         "exit": "Close the Slackuh interface.",
