@@ -8,3 +8,5 @@ while running_program:
     match output:
         case ".exit":
             running_program = False
+        case ".list":
+            list_commands()
