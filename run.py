@@ -1,3 +1,5 @@
+from commands import list_commands
+
 running_program = True
 
 while running_program:
