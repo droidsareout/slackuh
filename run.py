@@ -1,5 +1,3 @@
-from commands import exit_program
-
 running = 1
 
 while running:
@@ -8,3 +6,4 @@ while running:
     match output:
         case ".exit":
             running = 0
+        case ""
