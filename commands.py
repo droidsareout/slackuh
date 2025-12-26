@@ -25,3 +25,12 @@ def list_questions_answers():
     print("======= QUESTIONS & ANSWERS =======")
     for index, (key, value) in enumerate(question_answers.items(), 1):
         print(f"{index}: {key}\n{value}")
+
+def remove_question_answer():
+    question_to_remove = input("Remove question #: ")
+    question_to_remove = int(question_to_remove)
+
+    key = list(question_answers.keys())[question_to_remove - 1]
+    del question_answers[key]
+
+    print(f"Removed question #{question_to_remove}")

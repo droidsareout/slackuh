@@ -1,4 +1,4 @@
-from commands import list_commands, add_question_answer, list_questions_answers
+from commands import list_commands, add_question_answer, remove_question_answer, list_questions_answers
 
 running_program = True
 
@@ -14,6 +14,8 @@ while running_program:
             list_commands()
         case ".add":
             add_question_answer()
+        case ".remove":
+            remove_question_answer()
         case ".list":
             list_questions_answers()
         case _:
