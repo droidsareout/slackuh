@@ -12,3 +12,13 @@ def list_commands():
     print("======= COMMANDS =======")
     for command, info in command_list.items():
         print(f"{command}: {info}")
+
+def add_question_answer(sent_text):
+    sent_text = sent_text.replace(".add ", "")
+    sent_text = sent_text.split(",")
+    question = sent_text[0]
+    answer = sent_text[1]
+
+    question_answers[question] = answer
+
+    print(f"Added question \"{question}\" with answer \"{answer}\".")
