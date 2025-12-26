@@ -17,4 +17,4 @@ while running_program:
         case ".list":
             list_questions_answers()
         case _:
-            print("Error: Command doesn't exist.")
+            print(f"Error: command \"{sent_text}\" doesn't exist.")
