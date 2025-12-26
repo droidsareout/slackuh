@@ -1,5 +1,4 @@
-from commands import list_commands
-from commands import command_list
+from commands import list_commands, command_list
 
 running_program = True
 
