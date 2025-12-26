@@ -1,5 +1,5 @@
 question_answers = {}
-commands = {
+commands_list = {
     ".exit": "Close the Slackuh interface.",
     ".help": "View Slackuh's commands.",
     ".add": "Add a question and its answer. [question] [answer]",
