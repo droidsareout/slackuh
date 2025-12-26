@@ -1,6 +1,5 @@
 question_answers = {}
 
-
 def list_commands():
     commands = {
         "exit": "Close the Slackuh interface.",
@@ -11,6 +10,6 @@ def list_commands():
         "list": "View all questions and their answers.",
     }
 
-    print("===== COMMANDS =====")
+    print("======= COMMANDS =======")
     for command, info in commands.items():
         print(f"{command}: {info}")
