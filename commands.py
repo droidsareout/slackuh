@@ -20,3 +20,8 @@ def add_question_answer():
     question_answers[question] = answer
 
     print(f"Added question \"{question}\" with answer \"{answer}\".")
+
+def list_questions_answers():
+    print("======= QUESTIONS & ANSWERS =======")
+    for index, (key, value) in enumerate(question_answers.items(), 1):
+        print(f"{index}: {key}\n{value}")

@@ -1,4 +1,4 @@
-from commands import list_commands, add_question_answer
+from commands import list_commands, add_question_answer, list_questions_answers
 
 running_program = True
 
@@ -14,5 +14,7 @@ while running_program:
             list_commands()
         case ".add":
             add_question_answer()
+        case ".list":
+            list_questions_answers()
         case _:
             print("Error: Command doesn't exist.")
