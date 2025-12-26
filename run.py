@@ -13,5 +13,5 @@ while running_program:
     match sent_text:
         case ".exit":
             running_program = False
-        case ".list":
+        case ".help":
             list_commands()
