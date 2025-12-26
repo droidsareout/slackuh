@@ -2,7 +2,7 @@ from commands import list_commands
 
 running_program = True
 
-print("Entered Slackuh")
+print("Slackuh \nType \".help\" for commands.")
 
 while running_program:
     output = input(">> ")
