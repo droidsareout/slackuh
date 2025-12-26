@@ -12,7 +12,7 @@ while running_program:
             running_program = False
         case ".help":
             list_commands()
-        case add if sent_text.startswith(".add"):
-            add_question_answer(sent_text)
+        case ".add":
+            add_question_answer()
         case _:
             print("Error: Command doesn't exist.")
