@@ -14,8 +14,8 @@ def list_commands():
         print(f"{command}: {info}")
 
 def add_question_answer():
-    question = input("Question: ")
-    answer = input("Answer: ")
+    question = input("Add question: ")
+    answer = input("Add answer: ")
 
     questions_answers[question] = answer
 
