@@ -2,6 +2,8 @@ from commands import list_commands
 
 running_program = True
 
+print("Entered Slackuh")
+
 while running_program:
     output = input(">> ")
 
