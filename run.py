@@ -5,9 +5,9 @@ running_program = True
 print("Slackuh \nType \".help\" for a list of commands.")
 
 while running_program:
-    output = input(">> ")
+    sentText = input(">> ")
 
-    match output:
+    match sentText:
         case ".exit":
             running_program = False
         case ".list":
