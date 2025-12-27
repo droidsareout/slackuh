@@ -1,2 +1,6 @@
 # cache
 __pycache__/
+
+# questions and answers storing
+material/
+sets/
