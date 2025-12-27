@@ -17,7 +17,17 @@ def add_question_answer():
     question = input("Add question: ")
     answer = input("Add answer: ")
 
-    questions_answers[question] = answer
+    with open("material/questions.txt", "r") as file:
+        question_number = sum(1 for line in file) + 1
+
+        with open("material/questions.txt", "a") as file:
+            file.write(f"{question_number}: {question}\n")
+
+    with open("material/answers.txt", "r") as file:
+        answer_number = sum(1 for line in file) + 1
+
+        with open("material/answers.txt", "a") as file:
+            file.write(f"{answer_number}: {answer}\n")
 
     print(f"Added question \"{question}\" with answer \"{answer}\".")
 
