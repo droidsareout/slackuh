@@ -2,8 +2,8 @@ questions_answers = {}
 command_list = {
     ".exit": "Close the Slackuh interface.",
     ".help": "View Slackuh's commands.",
-    ".add": "Add a question and its answer. [question] [answer]",
-    ".remove": "Remove a question and its answer. [question #]",
+    ".add": "Add a question and its answer.",
+    ".remove": "Remove a question and its answer.",
     ".clear": "Clear all question and answers.",
     ".list": "View all questions and their answers.",
 }
