@@ -21,20 +21,27 @@ def add_question_answer():
         question_number = sum(1 for line in file) + 1
 
         with open("material/questions.txt", "a") as file:
-            file.write(f"{question_number}: {question}\n")
+            file.write(f"#{question_number}: {question}\n")
 
     with open("material/answers.txt", "r") as file:
         answer_number = sum(1 for line in file) + 1
 
         with open("material/answers.txt", "a") as file:
-            file.write(f"{answer_number}: {answer}\n")
+            file.write(f"#{answer_number}: {answer}\n")
 
     print(f"Added question \"{question}\" with answer \"{answer}\".")
 
 def list_questions_answers():
     print("======= QUESTIONS & ANSWERS =======")
-    for index, (key, value) in enumerate(questions_answers.items(), 1):
-        print(f"{index}: {key}\n{value}")
+
+    with open("material/questions.txt", "r") as file:
+        questions_file_lines = file.readlines()
+
+    with open("material/answers.txt", "r") as file:
+        answers_file_lines = file.readlines()
+
+    for questions_line, answers_line in zip(questions_file_lines, answers_file_lines):
+        print(f"{questions_line.strip()}\n{answers_line}")
 
 def remove_question_answer():
     question_to_remove = input("Remove question #: ")
