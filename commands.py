@@ -5,7 +5,7 @@ command_list = {
     ".add": "Add a question and its answer.",
     ".remove": "Remove a question and its answer.",
     ".clear": "Clear all questions and answers.",
-    ".list": "View all questions and their answers.",
+    ".list": "View all questions and answers.",
 }
 
 def list_commands():
