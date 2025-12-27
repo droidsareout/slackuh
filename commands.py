@@ -33,6 +33,6 @@ def remove_question_answer():
     key = list(questions_answers.keys())[question_to_remove - 1]
     del questions_answers[key]
 
-def clear_questions_answers()
+def clear_questions_answers():
     questions_answers.clear()
     print("Questions and answers cleared.")
