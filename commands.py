@@ -8,10 +8,12 @@ command_list = {
     ".list": "View all questions and answers.",
 }
 
+
 def list_commands():
     print("======= COMMANDS =======")
     for command, info in command_list.items():
         print(f"{command}: {info}")
+
 
 def add_question_answer():
     question = input("Add question: ")
@@ -29,7 +31,8 @@ def add_question_answer():
         with open("material/answers.txt", "a") as file:
             file.write(f"#{answer_number}: {answer}\n")
 
-    print(f"Added question \"{question}\" with answer \"{answer}\".")
+    print(f'Added question "{question}" with answer "{answer}".')
+
 
 def list_questions_answers():
     print("======= QUESTIONS & ANSWERS =======")
@@ -43,12 +46,14 @@ def list_questions_answers():
     for questions_line, answers_line in zip(questions_file_lines, answers_file_lines):
         print(f"{questions_line.strip()}\n{answers_line}")
 
+
 def remove_question_answer():
     question_to_remove = input("Remove question #: ")
     question_to_remove = int(question_to_remove)
 
     key = list(questions_answers.keys())[question_to_remove - 1]
     del questions_answers[key]
+
 
 def clear_questions_answers():
     with open("material/questions.txt", "w") as file:
