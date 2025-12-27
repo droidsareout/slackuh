@@ -51,5 +51,10 @@ def remove_question_answer():
     del questions_answers[key]
 
 def clear_questions_answers():
-    questions_answers.clear()
+    with open("material/questions.txt", "w") as file:
+        file.write("")
+
+    with open("material/answers.txt", "w") as file:
+        file.write("")
+
     print("Questions and answers cleared.")
